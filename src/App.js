@@ -484,7 +484,7 @@ const App = () => {
       <h1>Who Wants to Be a Millionaire?</h1>
       {gameOver ? (
         <div>
-          <h2>Your score: {score}/{Object.keys(questionsByLevel).length * 5}</h2>
+          <h2>Your score: {score}/{Object.keys(questionsByLevel).length}</h2>
           <h3>{calculatePrize()}</h3>
           <button onClick={restartGame}>Restart Game</button>
         </div>
